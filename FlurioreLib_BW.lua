@@ -145,7 +145,7 @@ function FlurioreLib:MakeNotify(NotifyConfig)
 	NotifyConfig.Title = NotifyConfig.Title or "nyann os Version 5"
 	NotifyConfig.Description = NotifyConfig.Description or "Notification"
 	NotifyConfig.Content = NotifyConfig.Content or "Content"
-	NotifyConfig.Color = NotifyConfig.Color or Color3.fromRGB(255, 255, 255)
+	NotifyConfig.Color = Color3.fromRGB(255, 255, 255) -- force white (no purple)
 	NotifyConfig.Time = NotifyConfig.Time or 0.5
 	NotifyConfig.Delay = NotifyConfig.Delay or 5
 	local NotifyFunction = {}
@@ -364,7 +364,7 @@ function FlurioreLib:MakeGui(GuiConfig)
 	local GuiConfig = GuiConfig or {}
 	GuiConfig.NameHub = GuiConfig.NameHub or "nyann os Version 5"
 	GuiConfig.Description = GuiConfig.Description or "by real_@nyannnokonoko"
-	GuiConfig.Color = GuiConfig.Color or Color3.fromRGB(255, 255, 255)
+	GuiConfig.Color = Color3.fromRGB(255, 255, 255) -- force white (no purple)
 	GuiConfig["Logo Player"] = GuiConfig["Logo Player"] or "https://www.roblox.com/headshot-thumbnail/image?userId="..game:GetService("Players").LocalPlayer.UserId .."&width=420&height=420&format=png"
 	GuiConfig["Name Player"] = GuiConfig["Name Player"] or tostring(game:GetService("Players").LocalPlayer.Name)
 	GuiConfig["Tab Width"] = GuiConfig["Tab Width"] or 120
